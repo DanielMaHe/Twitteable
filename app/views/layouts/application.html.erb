@@ -10,7 +10,17 @@
     <%= javascript_importmap_tags %>
   </head>
 
+  <nav>
+    <ul>
+    <li><%=link_to "Tweets", users_path%></li>
+    </ul>
+  </nav>
+
   <body>
     <%= yield %>
+
+    <p class="notice"><%=notice %></p>
+    <p class="alert"><%=alert %></p>
+
   </body>
 </html>
