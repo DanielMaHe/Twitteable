@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
+  
   before_action :set_user, only: %i[show edit update destroy]
 
   # GET /users
   def index
+    # binding.pry
     # @users = User.all if member_signed_in?
-    @users = User.all if member_signed_in?
+    @users = User.all if user_signed_in?
   end
 
   # GET /users/1

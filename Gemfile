@@ -69,3 +69,5 @@ end
 gem "devise"
 
 gem "pry", "~> 0.13.1"
+
+gem 'email_validator' 
