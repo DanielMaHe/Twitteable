@@ -3,6 +3,7 @@ class TweetsController < ApplicationController
 
   # GET /tweets
   def index
+    binding.pry
     @tweets = Tweet.all
   end
 
