@@ -1,0 +1,20 @@
+.contactme_inputs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2em;
+   
+
+}
+
+.contactme_headers{
+    display: grid;
+    gap: .25em;
+    margin-bottom: 2em;
+}
+.contactme-sumary_checbox{
+margin-bottom: 2em;
+    
+}

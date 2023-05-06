@@ -1,4 +1,6 @@
 <div id="<%= dom_id user %>">
+
+<%# <h1>TES TES TES TES TEST</h1> %>
   <p>
     <strong>Email:</strong>
     <%= user.email %>
@@ -14,19 +16,10 @@
     <%= user.name %>
   </p>
 
-  <p>
-    <strong>Avatar:</strong>
-    <%= link_to user.avatar.filename, user.avatar if user.avatar.attached? %>
-  </p>
-
-  <p>
-    <strong>Password:</strong>
-    <%= user.password %>
-  </p>
-
-  <p>
-    <strong>Role:</strong>
-    <%= user.role %>
-  </p>
+  <% if user.avatar.attached? %>
+      <%= user.image_tag user.avatar %>
+    <% else %>
+      <%= image_tag "not_found.png", size: "100x100" %>
+    <% end %>
 
 </div>

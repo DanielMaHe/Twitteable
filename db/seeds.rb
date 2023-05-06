@@ -20,10 +20,10 @@ ActiveRecord::Base.connection.reset_pk_sequence!('likes')
 #   Character.create(name: "Luke", movie: movies.first)
 puts "user create"
 admin = User.create(email: "admin@mail.com", username: "adminAdmin",name:"admin", password: "qwerty",password_confirmation:"qwerty", role: 1)
-user1 = User.create(email: "user1@mail.com", username: "user1",name:"name1", password: "qwerty")
-user2 = User.create(email: "user2@mail.com", username: "user2",name:"name2", password: "qwerty")
-user3 = User.create(email: "user3@mail.com", username: "user3",name:"name3", password: "qwerty")
-user4 = User.create(email: "user4@mail.com", username: "user4",name:"name4", password: "qwerty")
+user1 = User.create(email: "user1@mail.com", username: "userName1",name:"name1", password: "qwerty")
+user2 = User.create(email: "user2@mail.com", username: "userName2",name:"name2", password: "qwerty")
+user3 = User.create(email: "user3@mail.com", username: "userName3",name:"name3", password: "qwerty")
+user4 = User.create(email: "user4@mail.com", username: "userName4",name:"name4", password: "qwerty")
 puts admin.errors.full_messages
 
 puts "user created"

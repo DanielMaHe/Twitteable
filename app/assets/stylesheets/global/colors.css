@@ -1,0 +1,112 @@
+
+:root{ /* custom properties */
+    --gray-900:#111827;
+    --gray-800:#1F2937;
+    --gray-700:#374151;
+    --gray-600:#4B5563;
+    --gray-500:#6B7280;
+    --gray-400:#9CA3AF;
+    --gray-300:#D1D5DB;
+    --gray-200:#E5E7EB;
+    --gray-100:#F3F4F6;
+    --gray-50:#F9FAFB;
+
+    --pink-900:#831843;
+    --pink-800:#9D174D;
+    --pink-700:#BE185D;
+    --pink-600:#DB2777;
+    --pink-500:#EC4899;
+    --twet_primary-400:#E76A94;
+    --pink-400:#F472B6;
+    --twet_primary-300:#F490B1;
+    --pink-300:#F9A8D4;
+    
+    --pink-200:#FBCFE8;
+    --pink-100:#FCE7F3;
+    --pink-50:#FDF2F8;
+
+    --Stone-900:#1C1917;
+    --Stone-800:#292524;
+    --Stone-700:#44403C;
+    --Stone-600:#57534E;
+    --Stone-500:#78716C;
+    --Stone-400:#A8A29E;
+    --Stone-300:#D6D3D1;
+    --Stone-200:#E7E5E4;
+    --Stone-100:#F5F5F4;
+    --Stone-50:#FAFAF9;
+
+    --Red-900:#7F1D1D;
+    --Red-800:#991B1B;
+    --Red-700:#B91C1C;
+    --Red-600:#DC2626;
+    --Red-500:#EF4444;
+    --Red-400:#F87171;
+    --Red-300:#FCA5A5;
+    --Red-200:#FECACA;
+    --Red-100:#FEE2E2;
+    --Red-50:#FEF2F2;
+
+    --Yellow-900:#78350F;
+    --Yellow-800:#92400E;
+    --Yellow-700:#B45309;
+    --Yellow-600:#D97706;
+    --Yellow-500:#F59E0B;
+    --Yellow-400:#FBBF24;
+    --Yellow-300:#FCD34D;
+    --Yellow-200:#FDE68A;
+    --Yellow-100:#FEF3C7;
+    --Yellow-50:#FFFBEB;
+
+    --Green-900:#09201B;
+    --Green-800:#1B3C23;
+    --Green-700:#2A5F38;
+    --Green-600:#3A824D;
+    --Green-500:#44C566;
+    --Green-400:#77E297;
+    --Green-300:#90E9B9;
+    --Green-200:#CCFAE1;
+    --Green-100:#E4FAED;
+    --Green-50:#F5FCF8;
+
+    --blue-900:#1E3A8A;
+    --blue-800:#1E40AF;
+    --blue-700:#1D4ED8;
+    --blue-600:#2563EB;
+    --blue-500:#3B82F6;
+    --blue-400:#60A5FA;
+    --blue-300:#93C5FD;
+    --blue-200:#BFDBFE;
+    --blue-100:#DBEAFE;
+    --blue-50:#EFF6FF;
+
+    --black:#171717 ;
+    --white:#FFFFFF ;
+
+    --primary-ligther: var(--pink-100);
+    --primary-ligth: var(--pink-300);
+    --primary:var(--pink-600);
+    --primary-dark: var(--pink-700);
+    --primary-darker: var(--pink-900);
+    --primary-300:var(--twet_primary-300);
+    --primary-400:var(--twet_primary-400);
+
+    --secondary-ligther:var(--Stone-100);
+    --secondary-ligth: var(--Stone-300);
+    --secondary: var(--Stone-500);
+    --secondary-dark: var(--Stone-700);
+    --secondary-darker: var(--Stone-900);
+  
+    --error: var(--Red-400);
+    --warnig: var(--Yellow-300);
+    --succes: var(--Green-400);
+    --info: var(--blue-400);
+    --text: var(--gray-900);
+  
+    --background-ligther:var(--white);
+    --background-ligth : var(--gray-50);
+    --background: var(--gray-100);
+    --background-dark: var(--gray-200);
+    --background-darker: var(--gray-300);
+    
+}

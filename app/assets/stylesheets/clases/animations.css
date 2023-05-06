@@ -1,0 +1,154 @@
+.transition-button{
+    background-color: var(--primary-ligth);
+    color: var(--white);
+
+    /* Transition: property/rule | duration | timing-function | delay */
+
+    /* transition-property: ;
+    transition-duration: ;
+    transition-timing-function: cubic-bezier() ;
+    transition-delay: ; */
+
+    /* ease
+    linear
+    ease-in
+    ease-out
+    ease-in-out */
+
+    /* transition: background-color 1s ease-in 2s; */
+    /* Se pueden listar varias reglas o propiedades */
+    /* transition: opacity 1.5s linear,
+                transform 1.5s ease-in; */
+
+    transition: all 1.5s linear;
+}
+
+.transition-button:hover{
+    transform: translateY(10px);
+}
+
+/* .transition-button:hover{
+    background-color: var(--primary-dark);
+} */
+
+.transition-button:focus{
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.anchor-transition{
+    position: relative;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color .6s ease-in;
+}
+.anchor-transition:hover{
+    color: var(--primary-darker);
+
+
+}
+
+    /* lo carga antes del elemento padre */
+.anchor-transition::after{
+    content: "";
+    position: absolute;
+    left: 0;
+   right: 12px;
+   bottom: 6px;
+    border-bottom: 2px solid var(--primary);
+
+    transition: right .6s linear,
+                border-color .6s ease-in;
+}
+
+.anchor-transition:hover::after{
+    right: 100%;
+    border-color: var(--primary-darker);
+}
+
+
+.animation{
+    position: relative;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color .6s ease-in;
+
+}
+.animation::after{
+    content: "";
+    position: absolute;
+    left: 0;
+   right: 100%;
+   bottom: 6px;
+    border-bottom: 2px solid var(--primary);
+
+}
+
+/* @keyframes "nombre"{}*/
+@keyframes anchor-underline{
+
+    /* 0%,20%{
+        left: 0;
+        right: 100%;
+    } */
+
+
+    20%,40%{
+        left: 0;
+        right: 0%;
+    }
+
+   
+    60%,100%{
+        left: 100%;
+        right: 0%;
+    }
+}
+
+.animation:hover::after{
+    animation: anchor-underline 5s ease-in-out infinite;
+}
+
+/* Whit spam */
+/* .line{
+   position: absolute;
+   left: 0;
+   right: 0px;
+   bottom: 0;
+    border-bottom: 3px solid var(--primary);
+} */
+
+/* Estructurad de una animacion */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+.bounce:hover{
+    animation-name: bounce-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+
+@keyframes bounce-in{
+
+    0%{
+        font-size: 1.2rem;
+    }
+
+    20%{
+        font-size: 1.4rem;
+    }
+    50%{
+        font-size: 1rem;
+    }
+    100%{
+        font-size: 1.2rem;
+    }
+
+    
+}
+
+.image-test{
+    border-color: red;
+    
+}
