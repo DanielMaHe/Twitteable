@@ -5,6 +5,7 @@ class TweetsController < ApplicationController
   def index
     binding.pry
     @tweets = Tweet.all
+    binding.pry
   end
 
   # GET /tweets/1

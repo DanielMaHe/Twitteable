@@ -24,16 +24,19 @@ user1 = User.create(email: "user1@mail.com", username: "user1",name:"name1", pas
 user2 = User.create(email: "user2@mail.com", username: "user2",name:"name2", password: "qwerty")
 user3 = User.create(email: "user3@mail.com", username: "user3",name:"name3", password: "qwerty")
 user4 = User.create(email: "user4@mail.com", username: "user4",name:"name4", password: "qwerty")
-puts user2.errors.full_messages
+puts admin.errors.full_messages
 
 puts "user created"
 puts "tweet create"
 
 tweet = Tweet.create(body:" this is body", user:user3)
-tweet1 = Tweet.create(body:" this is body", user:user3)
-tweet2 = Tweet.create(body:" this is body", user:user1)
-tweet3 = Tweet.create(body:" this is body", user:user2)
-tweet4 = Tweet.create(body:" this is body", user:user2)
+tweet1 = Tweet.create(body:" this is body1", user:user3)
+tweet2 = Tweet.create(body:" this is body2", user:user1)
+tweet3 = Tweet.create(body:" this is body3", user:user2)
+tweet4 = Tweet.create(body:" this is body4", user:user2,replied_to: tweet)
+tweet5 = Tweet.create(body:" this is body5", user:user2,replied_to: tweet5)
+tweet6 = Tweet.create(body:" this is body6", user:user2,replied_to: tweet5)
+
 puts "tweet created"
 puts "like create"
 
