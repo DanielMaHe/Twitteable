@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
-    binding.pry
+    # binding.pry
     @user = User.find_by(username: params[:username])
   end
 
