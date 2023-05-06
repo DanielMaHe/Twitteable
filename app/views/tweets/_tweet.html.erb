@@ -1,21 +1,24 @@
 <div id="<%= dom_id tweet %>">
 
   <%= link_to tweet_path(tweet) do %>
-    <% if tweet.user.avatar.attached? %>
-      <%= tweet.user.image_tag user.avatar %>
-    <% else %>
-      <%= image_tag "not_found.png", size: "100x100" %>
-    <% end %>
-    <%# <%= link_to "Show this tweet", tweet %>
+
+    <figure>
+      <% if tweet.user.avatar.attached? %>
+        <%= image_tag tweet.user.avatar, size: "100x100" %>
+      <% else %>
+        <%= image_tag "not_found.png", size: "100x100" %>
+      <% end %>
+    </figure>
+
     <span>
-      <%# <%= link_to tweet.user.name, user_path %>
-      <%= link_to tweet.user.name, user_path(tweet.user.username) %>
+      <%= link_to tweet.user.name, user_path(tweet.user.username), class: "text-decoration-none" %>
     </span>
-    <%# <span><%= tweet.user.name %>
-    <span>@<%= link_to tweet.user.username, user_path(tweet.user.username) %></span>
-    <%# <span>@<%= tweet.user.username %>
+
+    <span>@<%= link_to tweet.user.username, user_path(tweet.user.username), class: "text-decoration-none" %></span>
     <span><%= time_ago_in_words(tweet.created_at).gsub("about", "")%> ago</span>
-    <p><%= tweet.body %></p>
+
+    <p><%= link_to tweet.body,  tweet_path(tweet), class: "text-decoration-none " %></p>
+
   <% end %>
 
   <div>
