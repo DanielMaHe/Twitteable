@@ -1,0 +1,91 @@
+.w-full{
+    width: 100%;
+}
+
+.ligth{
+    font-weight: 300;
+}
+
+.regular{
+    font-weight: 400;
+}
+
+.semibold{
+    font-weight: 600;
+}
+
+.overline{
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.mono{
+    font-family: "Source Code Pro", monospace;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.ml-4{
+    margin-left: 1rem;
+}
+
+.text-alingth-center{
+    text-align: center;
+}
+
+.lg-1{
+    line-height: 1em;
+}
+
+.lg-3{
+    line-height: 3.5em;
+}
+
+.color-primary{
+    color: var(--primary);
+}
+
+.color-primary_400{
+    color: var(--primary-400);
+}
+.color-primary_300{
+    color: var(--primary-300);
+}
+
+
+
+.color-primary-dark{
+    color: var(--primary-dark);
+}
+
+.color-text{
+    color: var(--text);
+}
+
+.bg-color-secondary-ligth{
+    background-color: var(--secondary-ligth);
+}
+
+.bg-color-background{
+    background-color: var(--background);
+}
+
+.img__md{
+    height: 220px;
+    width: 319px;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+.logo_md{
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0.2em; 
+    grid-area: 1 / 1 / 2 / 2;
+  }

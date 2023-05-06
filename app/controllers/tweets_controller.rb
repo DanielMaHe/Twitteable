@@ -1,15 +1,18 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: %i[show edit update destroy]
+  skip_before_action :authenticate_user!, only: %i[index show]
 
   # GET /tweets
   def index
-    binding.pry
     @tweets = Tweet.all
-    binding.pry
+
   end
 
   # GET /tweets/1
-  def show; end
+  def show
+    # @tweets = Tweet.find(params[:id])
+
+  end
 
   # GET /tweets/new
   def new

@@ -71,3 +71,7 @@ gem "devise"
 gem "pry", "~> 0.13.1"
 
 gem "email_validator"
+
+gem 'time_ago_in_words'
+
+# gem 'remixicon', '~> 1.2', '>= 1.2.1'
