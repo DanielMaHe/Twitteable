@@ -64,6 +64,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "dotenv-rails"
 end
 
 gem "devise"
@@ -72,6 +73,14 @@ gem "pry", "~> 0.13.1"
 
 gem "email_validator"
 
-gem 'time_ago_in_words'
+gem "time_ago_in_words"
+
+# gem 'omniauth'
+# gem 'omniauth-github'
+gem "omniauth-github", github: "omniauth/omniauth-github", branch: "master"
+
+gem "omniauth-rails_csrf_protection"
+
+
 
 # gem 'remixicon', '~> 1.2', '>= 1.2.1'
