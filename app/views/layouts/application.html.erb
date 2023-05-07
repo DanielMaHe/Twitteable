@@ -17,9 +17,7 @@
           <a
               href="<%= root_path %>"
             class="navbar__logo heading-md semibold text-decoration-none"
-            >
-          <%# <%=link_to "", root_path,class: "navbar__logo heading-md semibold text-decoration-none" %>
-        
+            >        
             <p class= "">{<span class="color-primary_400">Tweet</span>able}</p>
 
             <label for="menu-mobile" id="toggle-close">
@@ -27,32 +25,31 @@
             </label>
   
             <label for="menu-mobile" id="toggle-open">
-              <%# <i class="ri-menu-fill ri-sm"></i> %>
               <%= image_tag "burger.png" %>
             </label>
           </a>
 
           <ul class="navbar__links list-style-none expandable">
-            <li>
-              <%# <a href="Article.html" class="link text-md semibold">Articles</a> %>
-              <%=link_to "Log in", new_user_session_path,class: "link text-md semibold" %>
+            
+            <%if user_signed_in?%>
+              <li>
+              <%=link_to "Profile", user_path(current_user.username), class: "link text-md semibold"%>
             </li>
             <li>
-              <%# <a href="./portfolio.html" class="link text-md semibold">Portfolio</a> %>
+              <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "button button--primary button--sm text-decoration-none ml-4", data: { turbo: false } %>
+            </li>
+              <%else%>
+            <li>
               <%=link_to "Sig up", new_user_registration_path, class: "link text-md semibold"%>
             </li>
             <li>
-              <%# <a href="./About.html" class="link text-md semibold">About</a> %>
-              <%=link_to "Log out", destroy_user_session_path, class: "link text-md semibold",data: {turbo_method: :delete}%>
-
-            </li>
-            <li>
               <a
-                href="./Contactme.html"
+                href="<%= new_user_session_path %>"
                 class="button button--primary button--sm text-decoration-none ml-4"
-                >Contac me</a
-              >
+                >Log in</a>
             </li>
+              <%end%>
+
           </ul>
         </nav>
       </div>

@@ -81,6 +81,4 @@ gem "omniauth-github", github: "omniauth/omniauth-github", branch: "master"
 
 gem "omniauth-rails_csrf_protection"
 
-
-
 # gem 'remixicon', '~> 1.2', '>= 1.2.1'

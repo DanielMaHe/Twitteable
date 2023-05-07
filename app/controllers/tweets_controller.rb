@@ -5,13 +5,11 @@ class TweetsController < ApplicationController
   # GET /tweets
   def index
     @tweets = Tweet.all
-
   end
 
   # GET /tweets/1
   def show
     # @tweets = Tweet.find(params[:id])
-
   end
 
   # GET /tweets/new

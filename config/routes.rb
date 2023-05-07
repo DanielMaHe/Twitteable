@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   # root to: 'users#index'
   # get "/user", to: "users#show"
   get "/users/:username", to: "users#show", as: "user"
-  patch "/user", to: "users#edit"
+  # patch "/user", to: "users#edit"
+  # patch "/users/edit", to: "users#edit"
 end
