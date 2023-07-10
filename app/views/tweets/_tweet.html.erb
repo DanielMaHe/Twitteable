@@ -22,7 +22,7 @@
   <% end %>
 
   <div>
-    <%= link_to tweet_path(tweet.replies) do %>
+    <%= link_to tweet_path(tweet) do %>
       <%= image_tag "coments.png" %>
       <%= tweet.replies_count %>
     <% end %>

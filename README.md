@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Add .env whit your keys
 
-Things you may want to cover:
+///////////////////////////////////////////
 
-* Ruby version
+If it show this message when registering whit github: 
 
-* System dependencies
+>>>> Could not authenticate you from GitHub because "Csrf detected".<<<<
 
-* Configuration
+Please ignore it and try again.
+We are working to solve this details (; :)
 
-* Database creation
+//////////////////////////////////////////
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
