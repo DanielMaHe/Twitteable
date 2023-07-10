@@ -10,7 +10,7 @@
 
 .button{
     border: none;
-    border-radius: 0.5em;
+    /* border-radius: 0.5em; */
     font-size: 1em;
     line-height: 1em;
     font-weight: 600;
@@ -123,3 +123,8 @@
     background-color: var(--secondary) ;
 
 }
+
+.width-100px {
+    max-width: 100px;
+    /* max-height: 50px; */
+  }

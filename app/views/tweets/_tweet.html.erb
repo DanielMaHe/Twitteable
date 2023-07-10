@@ -1,8 +1,9 @@
-<div id="<%= dom_id tweet %>">
+
+<div id="<%= dom_id tweet %>" class= "footer__content" >
 
   <%= link_to tweet_path(tweet) do %>
-
-    <figure>
+<section style="max-width: 250px">
+    <figure >
       <% if tweet.user.avatar.attached? %>
         <%= image_tag tweet.user.avatar, size: "100x100" %>
       <% else %>
@@ -22,7 +23,7 @@
   <% end %>
 
   <div>
-    <%= link_to tweet_path(tweet.replies) do %>
+    <%= link_to tweet_path(tweet) do %>
       <%= image_tag "coments.png" %>
       <%= tweet.replies_count %>
     <% end %>
@@ -30,6 +31,8 @@
       <span><%= image_tag "likes.png" %><span><%= tweet.likes_count %></span></span>
     <% end %>
   </div>  
+</section>
+
 
   <%# <p> %>
     <%# <strong>comments:</strong> %>
