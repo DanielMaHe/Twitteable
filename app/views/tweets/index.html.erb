@@ -1,14 +1,19 @@
 <p class="color-primary_400"><%= notice %></p>
 
 <h1>Home</h1>
+<br>
+<%= link_to "New tweet", new_tweet_path, class: "button button--primary button--sm text-decoration-none ml-4" %>
+<br>
 
-<div id="tweets">
+<div id="tweets" class = "article-about__card">
   <% @tweets.each do |tweet| %>
+  <% if tweet.replied_to_id == nil %>
     <%= link_to tweet do %>
     <%= render tweet %>
       <%# <%= link_to "Show this tweet", tweet %>
     <%end%>
+    <%end%>
   <% end %>
 </div>
 
-<%= link_to "New tweet", new_tweet_path %>
+<%= link_to "New tweet", new_tweet_path, class: "button button--primary button--sm text-decoration-none ml-4" %>
