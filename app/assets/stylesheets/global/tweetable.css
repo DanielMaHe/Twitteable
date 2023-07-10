@@ -1,0 +1,7 @@
+.article-about__card{
+
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    gap: 0.75em;
+    padding: .5em;
+  }
